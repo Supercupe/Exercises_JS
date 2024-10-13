@@ -17,7 +17,7 @@ function main(start, end, hours_rate, overtime_multiplier){
     end = end;
     hours_rate = hours_rate;
     overtime_multiplier = overtime_multiplier;
-    let main = (17 - end)
+    let main = (15 - end)
     let money = (end - start)
     let extra = 0
 
@@ -27,7 +27,7 @@ function main(start, end, hours_rate, overtime_multiplier){
        extra =  ((main*(-1))*hours_rate)*overtime_multiplier
         money = ((money+main)*hours_rate)+extra
     }    
-    return "$"+(money.toFixed(2))
+    return "CZK"+(money.toFixed(2))
     }
 
-console.log(main(8, 18, 20, 1.5))
+console.log(main(10, 17, 150, 1.5))

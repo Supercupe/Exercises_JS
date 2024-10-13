@@ -2,7 +2,7 @@
 //and return "Boom!" if the digit 7 appears in the array. 
 //Otherwise, return "there is no 7 in the array".
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+const numbers = [7, 7, 6, 5, 8, 3, 4, 8, 5, 7, 77]
 
 function boom(numbers_array){
     let found = false;
